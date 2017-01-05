@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
+  "name": "application",
   "version": "0.0.0",
-  "description": "Small description for frontend goes here",
+  "description": "Small description for application goes here",
   "license": "MIT",
   "author": "",
   "directories": {
