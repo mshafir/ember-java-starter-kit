@@ -28,12 +28,13 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.liquibase:liquibase-core')
+	// compile('org.liquibase:liquibase-core')
 	compile("org.springframework.boot:spring-boot-starter-web")
+	compile("org.postgresql:postgresql:9.4-1206-jdbc42")
 
 	compile("com.yahoo.elide:elide-core:2.4.13")
 	compile("com.yahoo.elide:elide-datastore-hibernate5:2.4.13")
 
-	//compile('org.springframework.boot:spring-boot-starter-security')
+	// compile('org.springframework.boot:spring-boot-starter-security')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
