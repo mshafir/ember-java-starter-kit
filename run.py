@@ -15,7 +15,7 @@ def start_display(callback1, callback2):
     loop.run()
     for p in PIDS:
         if p.poll() == None:
-            print 'killing '+p.pid
+            print 'stopping '+p.pid
             p.kill()
 
 def run(command, dir, log):
