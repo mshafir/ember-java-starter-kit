@@ -9,14 +9,14 @@ sudo pip install urwid
 
 # set up ember dependencies
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-nvm install node
 source /home/user/.bashrc
+nvm install node
 npm install -g ember-cli
 npm install -g bower
 
 # set up postgres
 sudo apt-get update
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install -y postgresql postgresql-contrib
 sudo service postgresql start
 
 # if you need to you can clear the existing db for a fresh environment

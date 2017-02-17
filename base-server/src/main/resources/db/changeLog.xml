@@ -7,8 +7,17 @@
     <changeSet id="1" author="mshafir">
         <comment>Initial User Tables</comment>
         <createTable tableName="users">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="username" type="varchar(50)"/>
+            <column name="password" type="varchar(512)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(50)"/>
+        </createTable>
         <rollback>
-            <dropTable tableName="users">
+            <dropTable tableName="users" />
         </rollback>
     </changeSet>
 </databaseChangeLog>
